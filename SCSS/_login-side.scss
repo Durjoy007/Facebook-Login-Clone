@@ -1,0 +1,62 @@
+@use './variables';
+
+@mixin placeHolder {
+    
+}
+
+.loginPart{
+    width: 30%;
+    height: 60%;
+    border: 2px solid red;
+    position: relative;
+    top: 20%;
+    left: 60%;
+
+    &__form{
+        width: 94%;
+        height: 30%;
+        // border: 2px solid green;
+        position: absolute;
+        top: 3%;
+        left: 3%;
+
+        &--inputGroup1{
+            width: 100%;
+            height: 45%;
+            border-radius: 13px;
+
+            &::placeholder{
+                padding-left: 2%;
+                font-size: 15px;
+            }
+        }
+
+        &--inputGroup2{
+            width: 100%;
+            height: 45%;
+            border-radius: 13px;
+            position: absolute;
+            top: 60%;
+            left: 0%;
+
+            &::placeholder{
+                padding-left: 2%;
+                font-size: 15px;
+            }
+        }
+
+        &--btnLogIn{
+            width: 100%;
+            height: 45%;
+            position: absolute;
+            top: 118%;
+            left: 0%;
+            border-radius: 13px;
+
+            & .logIn{
+                text-align: center;
+                font-size: 15px;
+            }
+        }
+    }
+}
