@@ -1,0 +1,37 @@
+@use './variables';
+
+@use './mixins';
+
+.passDialogue{
+    position: absolute;
+    top: 60%;
+    left: 36%;
+    color: $passDialogue-color;
+    font-size: 15px;
+    font-family: 'Segoe UI';
+}
+
+.divider{
+    width: 93%;
+    position: absolute;
+    top: 74%;
+    left: 4%;
+    color: $horizontal-rule-color;
+    opacity: 30%;
+}
+
+.btnCreate{
+    @include boxStyle();
+    width: 44%;
+    height: 15%;
+    position: absolute;
+    top: 82%;
+    left: 30%;
+    background-color: $create-background-color;
+
+    .createId{
+        color: $login-create-font-color;
+        font-family: 'Segoe UI';
+        font-weight: 700;
+    }
+}

@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,15 +7,31 @@
 
     <link rel="stylesheet" href="./SCSS/main.css">
 </head>
+
 <body>
     <div class="loginPart">
         <section class="loginPart__form">
             <form action="#" method="#">
-                <input class= 'loginPart__form--inputGroup1' type="text" placeholder="Email address or phone number">
-                <input class= 'loginPart__form--inputGroup2' type="text" placeholder="Password">
-                <button class= 'loginPart__form--btnLogIn' type="submit"> <span class="logIn">Log In</span> </button>
+                <input class='loginPart__form--inputGroup1' id="inputGroup1" type="text" placeholder="Email address or phone number" onclick="return borderColor()">
+                <input class='loginPart__form--inputGroup2' id='inputGroup2'type="text" placeholder="Password" onclick="return borderColor()">
+                <button class='loginPart__form--btnLogIn' type="submit">
+                    <span class="logIn">Log In</span>
+                </button>
             </form>
         </section>
+
+        <small class="passDialogue">Forgotten Password?</small>
+        <hr class="divider">
+
+        <section class="loginPart__restPart">
+            <button class='btnCreate' type="submit">
+                <span class="createId">Create New Account</span>
+            </button>
+        </section>
     </div>
+<!-- <section class="loginPart__belowDialogue">
+            <span>Create a Page</span> <span>for a celebrity, band or business.</span>
+        </section> -->
 </body>
+
 </html>
