@@ -9,11 +9,49 @@
 </head>
 
 <body>
+    <!-- Brand Section And Login Shortcut Section -->
+    <section class="dialogues">
+        <section class="dialogues__brandName">
+            facebook
+        </section>
+
+        <section class="dialogues__recentLoginsDialogue">
+            Recent logins
+        </section>
+
+        <section class="dialogues__clickImageDialogue">
+            Click your picture or add an account.
+        </section>
+    </section>
+
+   
+    <div class="box1">
+        <img class='box1__accountImage' src="./Photos/profile-image.jpg" alt="">
+        <img class='box1__removeBtn' src="./Assets/Remove-Button.png" alt="">
+        <img class='box1__notifyBtn' src="./Assets/Notification-Area.png" alt="">
+
+        <div class="box1__subBox">
+            <span class="box1__subBox--accountName">bishway</span>
+        </div>
+    </div>
+
+    <div class="box2">
+        <div class="box2__subBox1">
+            <img class='box2__subBox1--addbutton' src="./Assets/Add-Button.png" alt="">
+        </div>
+        <div class="box2__subBox2">
+            <span class="box2__subBox2--addAccount">Add Account</span>
+        </div>
+    </div>
+
+
+    <!-- User Login Form Section -->
     <div class="loginPart">
         <section class="loginPart__form">
             <form action="#" method="#">
-                <input class='loginPart__form--inputGroup1' id="inputGroup1" type="text" placeholder="Email address or phone number" onclick="return borderColor()">
-                <input class='loginPart__form--inputGroup2' id='inputGroup2'type="text" placeholder="Password" onclick="return borderColor()">
+                <input class='loginPart__form--inputGroup1' id="inputGroup1" type="text"
+                    placeholder="Email address or phone number">
+                <input class='loginPart__form--inputGroup2' id='inputGroup2' type="text" placeholder="Password">
                 <button class='loginPart__form--btnLogIn' type="submit">
                     <span class="logIn">Log In</span>
                 </button>
@@ -29,9 +67,10 @@
             </button>
         </section>
     </div>
-<!-- <section class="loginPart__belowDialogue">
-            <span>Create a Page</span> <span>for a celebrity, band or business.</span>
-        </section> -->
+
+    <section class="belowDialogue">
+        <span class="belowDialogue__dialogue1">Create a Page</span> for a celebrity, band or business.
+    </section>
 </body>
 
 </html>
